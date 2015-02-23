@@ -15,6 +15,7 @@ dependencies[] = fpa
 dependencies[] = metatag
 dependencies[] = module_filter
 dependencies[] = navbar
+dependencies[] = pathauto
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = wysiwyg
