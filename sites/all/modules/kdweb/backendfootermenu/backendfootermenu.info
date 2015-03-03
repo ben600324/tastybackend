@@ -1,0 +1,10 @@
+name = Backend Quick Add Menu
+description = "Display menu on backend footer".
+package = KD Techeeeeeee
+core = 7.x
+
+;stylesheets[screen][] = css/crm_addition.css
+
+;scripts[] = js/jquery-1.11.1.js
+;scripts[] = js/slidx.js
+;scripts[] = js/noconflict-1.11.1.js

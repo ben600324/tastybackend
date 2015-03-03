@@ -1,0 +1,122 @@
+/*shotcuts start*/
+
+.navbar-tray-shortcuts ul li a{
+  padding-left:40px !important;
+}
+.navbar-tray-shortcuts ul li a:before{
+  background-attachment: scroll;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0.6667em; 
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.navbar-tray-shortcuts ul li a:before{
+  background-image: url("../images/787878/questionmark-disc.svg");
+}
+.navbar-tray-shortcuts ul li a.active:before{
+  background-image: url("../images/000000/questionmark-disc.svg");
+}
+.navbar-tray-shortcuts ul li a.My.Workbench:before{
+  background-image: url("../images/787878/dashboard.svg");
+}
+.navbar-tray-shortcuts ul li a.active.My.Workbench:before{
+  background-image: url("../images/000000/dashboard.svg");
+}
+.navbar-tray-shortcuts ul li a.Manage.Content:before{
+  background-image: url("../images/787878/wrench.svg");
+}
+.navbar-tray-shortcuts ul li a.active.Manage.Content:before{
+  background-image: url("../images/000000/wrench.svg");
+}
+.navbar-tray-shortcuts ul li a.Add.Content:before{
+  background-image: url("../images/787878/file.svg");
+}
+.navbar-tray-shortcuts ul li a.active.Add.Content:before{
+  background-image: url("../images/000000/file.svg");
+}
+.navbar-tray-shortcuts ul li a.Manage.People:before{
+  
+  background-image: url("../images/787878/people.svg");
+}
+.navbar-tray-shortcuts ul li a.active.Manage.People:before{
+  background-image: url("../images/000000/people.svg");
+}
+.navbar-tray-shortcuts ul li a.Shortcuts.By.Role:before{
+  background-image: url("../images/787878/puzzlepiece.svg");
+}
+.navbar-tray-shortcuts ul li a.active.Shortcuts.By.Role:before{
+  background-image: url("../images/000000/puzzlepiece.svg");
+}
+
+#navbar-link-admin-workbench:before{
+  background-image: url("../images/787878/dashboard.svg");
+}
+#navbar-link-admin-workbench.active:before{
+  background-image: url("../images/000000/dashboard.svg");
+}
+
+/*shotcuts end*/
+
+
+
+#block-backendfootermenu-backendfootermenu{
+  border-width: 0;
+}
+
+.slidx-menu {
+    background: #333;
+    -webkit-box-shadow: inset 0 0 5px 5px #222;
+    -moz-box-shadow: inset 0 0 5px 5px #222;
+    box-shadow: inset 0 0 5px 5px #222;
+    padding-top:40px;
+}
+.slidx-menu a.first{
+    border-top: 1px solid #000;  
+}
+.slidx-menu a.active{
+    background-color: #eeeeee;
+    color: #000;
+}
+
+.slidx-menu a{
+    padding: 20px 0px 20px 30px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    text-shadow: #38a 0px 1px 0px;
+}
+/*.slidx-menu li a{
+    color: #fff;
+}*/
+
+.slidx-menu a:hover {
+    background-color: #eeeeee !important;
+    cursor: pointer !important;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+#slidx-button {
+    padding: 5px 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #7bc;
+    -ms-transform:rotate(270deg); 
+    -moz-transform:rotate(270deg); 
+    -webkit-transform:rotate(270deg); 
+    -o-transform:rotate(270deg); 
+
+}
+
+#slidx-button:hover {
+    cursor: pointer;
+    text-decoration: none !important;
+}

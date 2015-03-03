@@ -78,5 +78,5 @@ Drupal.behaviors.rubik.attach = function(context, settings) {
   //   });
   // }
   
-};
+}; //Eed Main
 })(jQuery);
