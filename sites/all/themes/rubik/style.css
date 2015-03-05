@@ -524,7 +524,9 @@ select[multiple]{
   /*text-shadow: #000 0px 1px 0px !important;*/
 }
 
-
+#edit-actions{
+     /*max-width: 160px !important;*/
+}
 
 
 
