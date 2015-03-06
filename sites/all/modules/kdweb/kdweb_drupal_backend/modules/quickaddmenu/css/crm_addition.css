@@ -74,11 +74,22 @@
      outline: none;
      border-color: #000; 
 }
+#navbar-administration .navbar-box a:focus{
+     outline: none;
+     border-color: #fff;
+}
+
+#navbar-administration .navbar-box a:hover{
+     background: #F5F5F5;
+}
+
 #navbar-administration .navbar-menu .navbar-menu a:hover {
      color: #000;
 }
 
 /*shotcuts end*/
+
+/*===========================================================================================================================================================================*/
 
 /*right side menu start*/
 .slidx-menu {
@@ -120,6 +131,7 @@
     padding: 5px 30px;
     color: #fff;
     font-size:15px;
+    text-shadow: #38a 0px 1px 0px !important;
     font-family: "Lucida","Lucida Grande","Trebuchet MS",Tahoma,Verdana,sans-serif;
     font-weight: bold;
     background-color: #7bc;
@@ -137,13 +149,152 @@
 
 /*right side menu end*/
 
+/*===========================================================================================================================================================================*/
+
 /*content menu start*/
 #menu-overview-form td {
      position:relative;
 }
 
-.ctools-dropbutton{
+#menu-overview-form td .ctools-dropbutton{
      top:15px;
 }
-
 /*content menu end*/
+
+/*===========================================================================================================================================================================*/
+
+/*edit module filter tab start*/
+
+#module-filter-tabs li {
+     background: #f9f9f9 !important;
+     border-top: 1px solid #dddddd !important;
+}
+#module-filter-tabs li a:hover{
+     background: #eee !important;
+}
+#module-filter-tabs li.selected a:hover{
+     background: #fff !important;
+}
+#module-filter-tabs li.suggest {
+  background: #eee !important;
+}
+
+/*edit module filter tab end*/
+
+/*===========================================================================================================================================================================*/
+
+/* Content edit page start*/
+
+
+.vertical-tabs-list li a {
+     background: #7bc !important;
+     border-right: 1px solid #dddddd !important;
+     color: #fff !important;
+     font-size: 13px !important;
+     text-shadow: #38a 0px 1px 0px !important;
+     border-bottom: 1px solid #ddd !important;
+     padding:15px !important;
+}
+.vertical-tabs-list li.selected a {
+     background: #fff !important;
+     border-right: 1px solid #fff !important;
+     color: #000 !important;
+     text-shadow: #fff 0px 1px 0px !important;
+}
+
+.vertical-tabs-list li a:hover {
+     background: #f9f9f9 !important;
+     color: #000 !important;
+     text-shadow: #fff 0px 1px 0px !important;
+}
+.vertical-tabs-list li.selected a:hover {
+     background: #fff !important;
+}
+.form-wrapper.form-actions {
+     background: #f9f9f9 !important;
+}
+
+/* Content edit page end*/
+
+/*===========================================================================================================================================================================*/
+
+.fpa-left-section .item-list ul {
+    background: #f9f9f9 !important;
+}
+.fpa-left-section .item-list ul li:hover{
+    background: #eee !important;
+}
+
+/*===========================================================================================================================================================================*/
+
+/* kdweb's emendment.*/
+
+select[multiple]{
+  min-height: 100px;
+}
+
+.fpa-left-section .item-list li{
+  margin: 0px;
+  padding: 10px 0px;
+}
+.vertical-tabs-list li a{
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+.fpa-filter-form{
+  padding: 10px;
+}
+.column-side .column-wrapper{
+  position: fixed;
+}
+#body-add-more-wrapper fieldset{
+  padding: 0;
+}
+.vertical-tabs .fieldset-content .fieldset-content{
+  margin-top: 0 !important;
+}
+
+.action-links a{
+  font-weight: bold;
+  padding-right: 15px !important;
+}
+.action-links a:hover{
+  color: #000;
+}
+.my-workbench .contextual-links-region{
+  margin-bottom: 20px;
+}
+.button-yes{
+  background-color: #7bc !important;
+  color: #fff !important;
+  text-shadow: #38a 0px 1px 0px !important;
+  padding-right:15px;
+}
+.button-yes:hover{
+  background-color: #fff !important;
+  color: #000 !important;
+  text-shadow: #fff 0px 1px 0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

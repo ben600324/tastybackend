@@ -476,57 +476,6 @@ div.views-exposed-form input.form-autocomplete {
   color: #fff;
 }
 
-/* kdweb's emendment.*/
-
-select[multiple]{
-  min-height: 100px;
-}
-
-.fpa-left-section .item-list li{
-  margin: 0px;
-  padding: 10px 0px;
-}
-.vertical-tabs-list li a{
-  padding-top:10px;
-  padding-bottom: 10px;
-}
-.fpa-filter-form{
-  padding: 10px;
-}
-.column-side .column-wrapper{
-  position: fixed;
-}
-#body-add-more-wrapper fieldset{
-  padding: 0;
-}
-.vertical-tabs .fieldset-content .fieldset-content{
-  margin-top: 0 !important;
-}
-
-.action-links a{
-  font-weight: bold;
-  padding-right: 15px;
-}
-.action-links a:hover{
-  color: #000;
-}
-.my-workbench .contextual-links-region{
-  margin-bottom: 20px;
-}
-.button-yes{
-  background-color: #7bc !important;
-  color: #fff !important;
-  text-shadow: #38a 0px 1px 0px !important;
-}
-.button-yes:hover{
-  background-color: #fff !important;
-  color: #000 !important;
-  /*text-shadow: #000 0px 1px 0px !important;*/
-}
-
-#edit-actions{
-     /*max-width: 160px !important;*/
-}
 
 
 

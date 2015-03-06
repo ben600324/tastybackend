@@ -31,7 +31,7 @@ Drupal.behaviors.escapeAdmin = {
         $toolbarEscape.attr('href', settings.basePath + escapeAdminPath);
       }
       else {
-        $toolbarEscape.text(Drupal.t('Home'));
+        $toolbarEscape.text(Drupal.t('Back to site'));
       }
       $toolbarEscape.removeClass('element-hidden');
     }

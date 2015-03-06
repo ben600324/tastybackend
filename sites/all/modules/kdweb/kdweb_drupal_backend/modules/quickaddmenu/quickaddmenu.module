@@ -45,7 +45,7 @@ function quick_add_menu(){
 }
 
 function quickaddmenu_page_build(&$page) {
-    $page['content']['quick_add_menu'] = array(
+    $page['page_bottom']['quick_add_menu'] = array(
       '#markup' => quick_add_menu(), 
       '#weight' => 25,
     );
