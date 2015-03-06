@@ -184,31 +184,47 @@
 /*===========================================================================================================================================================================*/
 
 /* Content edit page start*/
-
+.vertical-tabs .vertical-tabs-list {
+    padding-right: 15px;
+}
 
 .vertical-tabs-list li a {
+     position: relative;
      background: #7bc !important;
-     border-right: 1px solid #dddddd !important;
      color: #fff !important;
-     font-size: 13px !important;
      text-shadow: #38a 0px 1px 0px !important;
-     border-bottom: 1px solid #ddd !important;
+     border-right: 1px solid #dddddd !important;
+     font-size: 13px !important;
+     border-bottom: 1px solid #fff !important;
      padding:15px !important;
 }
 .vertical-tabs-list li.selected a {
-     background: #fff !important;
-     border-right: 1px solid #fff !important;
+     border-right: 1px solid #ddd !important;
+     background: #7bc !important;
      color: #000 !important;
-     text-shadow: #fff 0px 1px 0px !important;
+     text-shadow: #7bc 0px 1px 0px !important;
+     padding-left: 50px;
+}
+.vertical-tabs-list li.selected a:after {
+     content:'\25BA';
+     font-size: 40px;
+     color: #7bc;
+     position: absolute;
+     display: inline-block;
+     top: 30%;
+     right:-22px;
+     z-index: 10;
 }
 
 .vertical-tabs-list li a:hover {
-     background: #f9f9f9 !important;
+     background: #7bc !important;
      color: #000 !important;
-     text-shadow: #fff 0px 1px 0px !important;
+     text-shadow: #7bc 0px 1px 0px !important;
 }
 .vertical-tabs-list li.selected a:hover {
-     background: #fff !important;
+     background: #7bc !important;
+     color: #000 !important;
+     text-shadow: #7bc 0px 1px 0px !important;
 }
 .form-wrapper.form-actions {
      background: #f9f9f9 !important;
@@ -271,9 +287,9 @@ select[multiple]{
   padding-right:15px;
 }
 .button-yes:hover{
-  background-color: #fff !important;
+  background-color: #7bc !important;
   color: #000 !important;
-  text-shadow: #fff 0px 1px 0px !important;
+  text-shadow: #7bc 0px 1px 0px !important;
 }
 
 
