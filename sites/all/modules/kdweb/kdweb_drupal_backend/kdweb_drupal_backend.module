@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Kdweb Drupal Backend feature.
+ */
+
+include_once 'kdweb_drupal_backend.features.inc';

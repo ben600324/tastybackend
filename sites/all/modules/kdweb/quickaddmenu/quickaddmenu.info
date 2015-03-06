@@ -1,4 +1,0 @@
-name = Backend Quick Add Menu
-description = "Display menu on right hand side".
-package = KD Tech
-core = 7.x

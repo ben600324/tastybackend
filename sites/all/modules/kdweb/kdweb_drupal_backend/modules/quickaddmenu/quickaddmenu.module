@@ -1,0 +1,55 @@
+<?php
+
+function quickaddmenu_init() {
+  drupal_add_js(drupal_get_path('module', 'quickaddmenu') . '/js/script.js');
+  drupal_add_css(drupal_get_path('module', 'quickaddmenu') . '/css/crm_addition.css');
+  drupal_add_js(drupal_get_path('module', 'quickaddmenu') . '/js/jquery-1.11.1.js');
+  drupal_add_js(drupal_get_path('module', 'quickaddmenu') . '/js/slidx.js');
+  drupal_add_js(drupal_get_path('module', 'quickaddmenu') . '/js/noconflict-1.11.1.js'); 
+}
+
+function quickaddmenu_permission() {
+  return array(
+    'access quick add menu' => array(
+      'title' => t('Access Quick Add Menu'),
+    ),
+  );
+}
+
+//function quickaddmenu_menu_alter(&$items) {
+//     dsm($items);
+//  $items['admin/structure/menu/manage/%menu']['title'] = $items['admin/structure/menu/manage/%menu/list']['title'] = t('List Links');
+//  $items['admin/structure/menu/manage/%menu/edit']['title'] = t('Edit');
+//}
+
+function quick_add_menu(){
+     if(user_access('access quick add menu')) {
+          $out = '';
+          $item = menu_get_item();
+          $tree = menu_tree_all_data(variable_get('menu_main_links_source', 'navigation'), $item, 3);
+          $menu = menu_tree_output($tree);
+          $out .= '<a id="slidx-button">Quick Add Content</a>';
+          $out .= '<div class="slidx-menu">';
+          $i = 0;
+          foreach ($menu[6]['#below'] as $key => $value) {
+            if(is_numeric($key)){
+              $active = '/'.$value['#href'] == request_uri()?'active':'';
+              $first = $i==0 ?'first"':'';
+              $out .= '<a class="'.$active.' '.$first.'" href="/'.$value['#href'].'"> Add '.$value['#title'].' </a>';
+            }
+           $i++;  
+          }
+          $out .= '</div>';
+          return $out;
+     }
+}
+
+function quickaddmenu_page_build(&$page) {
+    $page['content']['quick_add_menu'] = array(
+      '#markup' => quick_add_menu(), 
+      '#weight' => 25,
+    );
+}
+
+
+?>
