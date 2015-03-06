@@ -22,7 +22,7 @@ function _content_menu_menu_overview_page_extended() {
       $url = 'admin/structure/menu/manage/' . $menu['menu_name'];
       $url2 = 'admin/structure/menu/manage/' . $menu['menu_name'].'/edit';
       $row = array(theme('menu_admin_overview', array('title' => $menu['title'], 'name' => $menu['menu_name'], 'description' => $menu['description'])));
-      $row[] = array('data' => l(t('add link'), $url).' | '.l(t('edit menu'), $url2));
+      $row[] = array('data' => l(t('Edit'), $url).' | '.l(t('Configure'), $url2));
       $rows[] = $row;
     }
   }

@@ -69,7 +69,6 @@ function content_menu_menu_callback_menu_dummy() {
  * Rename some menu management tabs.
  */
 function content_menu_menu_alter(&$items) {
-     dsm($items);
   $items['admin/structure/menu/manage/%menu']['title'] = $items['admin/structure/menu/manage/%menu/list']['title'] = t('Edit');
   $items['admin/structure/menu/manage/%menu/edit']['title'] = t('Configure');
   $items['admin/structure/menu']['page callback'] = 'content_menu_menu_overview_page_extended';
